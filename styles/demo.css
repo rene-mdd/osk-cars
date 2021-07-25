@@ -1,0 +1,204 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+table th {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .price-filter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1px;
+  line-height: 4;
+  /* Remove IE arrow */
+  /* Custom Select */
+  /* Arrow */
+  /* Transition */
+}
+
+section .price-filter-container select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0 !important;
+  background: #373737;
+  background-image: none;
+}
+
+section .price-filter-container select::-ms-expand {
+  display: none;
+}
+
+section .price-filter-container .select {
+  position: relative;
+  width: 25%;
+  line-height: 3;
+  background: #373737;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+
+section .price-filter-container .select select {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 0.5em;
+  color: #fff;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+section .price-filter-container .select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #373737;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+  color: white;
+}
+
+section .price-filter-container .select:hover::after {
+  color: #f39c12;
+}
+
+section .price-filter-container .filter-button {
+  width: 25%;
+  border-radius: 0.25em;
+  background-color: #107ab0;
+  color: white;
+}
+
+section .price-filter-container input {
+  width: 25%;
+  padding: 0.25em;
+  border-radius: 0.25em;
+}
+
+@media screen and (max-width: 1000px) {
+  table {
+    border: 0;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+  table th {
+    font-size: 10px;
+  }
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+  section .price-filter-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .price-filter-container .select {
+    height: 3em;
+    width: 100%;
+  }
+  section .price-filter-container input {
+    height: 3em;
+    width: 100%;
+  }
+  section .price-filter-container .filter-button {
+    height: 3em;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1250px) {
+  table th {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=demo.css.map */
