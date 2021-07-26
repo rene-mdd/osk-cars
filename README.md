@@ -2,4 +2,4 @@
 filter app
 
 ### Technologies
-HTML - CSS - Javascript
+HTML - SCSS - Javascript
